@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #393939;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.app-container{
+    width: 30%;
+    height: 61%;
+    background-color: #808E62;
+    padding: 0rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 12px solid #B3C194;
+    outline: 10px solid #4F5440;
+}
+
+h1{
+    margin: 0.5rem 0rem 1.3rem;
+    font-size: 4rem;
+    font-weight: 100;
+}
+.scores{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scores p{
+    padding: 0rem 0 1.2rem;
+    font-size: 2rem;
+}
+
+.board{
+    width: 85%;
+    height: 87%;
+    background-color: #B3C194;
+    /* border-radius: 1rem; */
+    display: grid;
+    grid-template-columns: repeat(23,1fr);
+    grid-template-rows: repeat(23,1fr);
+}
+
+.btn{
+    width: 8rem;
+    height: 3.5rem;
+    font-family: "VT323", monospace;
+    margin: 2rem;
+    padding: 0.7rem;
+    font-size: 2rem;
+    color: white;
+    background-color:rgba(6, 202, 16, 0.897);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.head{
+    background-color:rgba(9, 194, 92, 0.904);
+    /* border-radius: 0.5rem; */
+}
+
+.snake{
+    background-color: #393939;
+    /* border-radius: 0.5rem; */
+}
+
+.food{
+    background-color: rgba(190, 36, 16, 0.849);
+    border-radius: 50%;
+}
+
+img{
+    height: 53vh;
+    width: 14vw;
+    object-fit: contain;
+    position: absolute;
+    right: 23%;
+    bottom: 15%;
+}
