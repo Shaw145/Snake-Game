@@ -23,8 +23,8 @@ html, body{
 }
 
 .app-container{
-    width: 30%;
-    height: 61%;
+    width: 36rem;
+    height: 36rem;
     background-color: #808E62;
     padding: 0rem 0 1rem;
     display: flex;
@@ -37,7 +37,7 @@ html, body{
 }
 
 h1{
-    margin: 0.5rem 0rem 1.3rem;
+    margin: 0rem 0rem 2.5rem;
     font-size: 4rem;
     font-weight: 100;
 }
@@ -48,7 +48,7 @@ h1{
     align-items: center;
 }
 .scores p{
-    padding: 0rem 0 1.2rem;
+    padding: 0.5rem 0 1.2rem;
     font-size: 2rem;
 }
 
@@ -56,10 +56,9 @@ h1{
     width: 85%;
     height: 87%;
     background-color: #B3C194;
-    /* border-radius: 1rem; */
     display: grid;
-    grid-template-columns: repeat(23,1fr);
-    grid-template-rows: repeat(23,1fr);
+    grid-template-columns: repeat(21,1fr);
+    grid-template-rows: repeat(21,1fr);
 }
 
 .btn{
@@ -80,23 +79,66 @@ h1{
 .head{
     background-color:rgba(9, 194, 92, 0.904);
     /* border-radius: 0.5rem; */
+    /* z-index: 22; */
+
 }
 
 .snake{
-    background-color: #393939;
-    /* border-radius: 0.5rem; */
+    background-color: #5a5a5a;
+    z-index: 22;
 }
 
 .food{
     background-color: rgba(190, 36, 16, 0.849);
     border-radius: 50%;
+    /* background-color: #dedede;
+    border: #999 5px solid; */
 }
 
 img{
-    height: 53vh;
-    width: 14vw;
+    height: 450px;
+    width: 260px;
     object-fit: contain;
     position: absolute;
-    right: 23%;
-    bottom: 15%;
+    left: calc(100vw - 37vw);
+    bottom: calc(100vh - 86vh);
+}
+
+
+@media  screen and (max-width:1750px)  {
+    img{
+        height: 450px;
+        left: calc(100vw - 36vw);
+        bottom: calc(100vh - 89vh);
+    }
+}
+
+@media screen and (max-width:750px){
+    .app-container{
+        width: 30rem;
+        height: 30rem;
+    }
+    img{
+        display: none;
+    }
+}
+@media screen and (max-width:550px){
+    .app-container{
+        width: 25rem;
+        height: 25rem;
+    }
+}
+@media screen and (max-width:450px){
+    .app-container{
+        width: 22rem;
+        height: 27rem;
+    }
+ 
+}
+@media screen and (max-width:390px){
+    .app-container{
+        width: 20rem;
+        height: 27rem;
+    }
+    
 }
